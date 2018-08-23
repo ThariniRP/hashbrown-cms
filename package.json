@@ -5,7 +5,9 @@
   "description": "The pluggable CMS",
   "main": "hashbrown.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' // your website URL//",
+    "runner": "node server/server.js"
   },
   "author": "Putaitu Productions",
   "license": "MIT",
